@@ -1,15 +1,14 @@
 import { Router } from "express";
-// import { ClientController } from "./controllers/ClientController";
-import { CompanyController } from "./controllers/CreateCompanyController";
-import { GetAllCompaniesController } from "./controllers/GetAllCompaniesController";
-import { DeleteCompanyController } from "./controllers/DeleteCompanyController";
-import { UpdateCompanyController } from "./controllers/UpdateCompanyController";
+import { CompanyController } from "./controllers/CompanyController";
+
 
 const routes = Router()
 
-routes.post("/createcompany", new CompanyController().handle)
-routes.get("/listcompanies", new GetAllCompaniesController().handle)
-routes.delete("/deletecompany/:id", new DeleteCompanyController().handle)
-routes.put("/altercompany/:id", new UpdateCompanyController().handle)
+routes.post("/createcompany", new CompanyController().create)
+routes.get("/listcompanies/", new CompanyController().findAll)
+routes.get("/findcompanies/:id", new CompanyController().findById)
+routes.delete("/deletecompany/:id", new CompanyController().delete)
+routes.put("/updatecompany/", new CompanyController().update)
+routes.put("/updatecompany/:id", new CompanyController().update)
 
 export { routes } 
