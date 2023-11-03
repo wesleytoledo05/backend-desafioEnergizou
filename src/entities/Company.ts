@@ -19,10 +19,10 @@ export class Company {
     companyname?: string;
 
     @Column()
-    cnpj: number;
+    cnpj: string;
 
     @Column()
-    cep: number;
+    cep: string;
 
     @Column()
     address: string;
@@ -31,7 +31,7 @@ export class Company {
     number: number;
 
     @Column()
-    phone: number;
+    phone: string;
 
 
 }

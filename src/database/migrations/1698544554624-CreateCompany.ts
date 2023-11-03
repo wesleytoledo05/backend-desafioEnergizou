@@ -35,11 +35,11 @@ export class CreateCompany1698544554624 implements MigrationInterface {
                     },
                     {
                         name: "cnpj",
-                        type: "bigint",
+                        type: "varchar",
                     },
                     {
                         name: "cep",
-                        type: "bigint",
+                        type: "varchar",
                     },
                     {
                         name: "address",
@@ -51,7 +51,7 @@ export class CreateCompany1698544554624 implements MigrationInterface {
                     },
                     {
                         name: "phone",
-                        type: "bigint",
+                        type: "varchar",
                     },
                 ]
             })

@@ -9,15 +9,15 @@ type CompanyRequest = {
     email: string;
     password: string;
     companyname: string;
-    cnpj: number;
-    cep: number;
+    cnpj: string;
+    cep: string;
     address: string;
     number: number;
-    phone: number;
+    phone: string;
 }
 
 export class CreateCompanyService {
-    async execute({ nameClient, email, password, companyname, cnpj, cep, address, number, phone }: CompanyRequest): Promise<Company | Error> {
+    async create({ nameClient, email, password, companyname, cnpj, cep, address, number, phone }: CompanyRequest): Promise<Company | Error> {
         const repo = getRepository(Company);
 
         if (await repo.findOne({

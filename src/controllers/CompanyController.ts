@@ -10,7 +10,7 @@ export class CompanyController {
 
         const service = new CreateCompanyService();
 
-        const result = await service.execute({ nameClient, email, password, companyname, cnpj, cep, address, number, phone })
+        const result = await service.create({ nameClient, email, password, companyname, cnpj, cep, address, number, phone })
 
         if (result instanceof Error) {
             return response.status(400).json(result.message)
