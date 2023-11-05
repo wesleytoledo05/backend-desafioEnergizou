@@ -24,6 +24,11 @@ $ cd backend-desafioEnergizou
 $ npm install
 ```
 
+**Configurando banco de dados**
+
+Abra o arquivo [.env](https://github.com/wesleytoledo05/backend-desafioEnergizou/blob/main/.env) e configure o banco de dados para rodar na sua máquina:
+
+
 Com todas as dependências instaladas, o Banco de Dados rodando e o ambiente devidamente configurado, crie as tabelas no banco de dados com o comando:
 
 ```
