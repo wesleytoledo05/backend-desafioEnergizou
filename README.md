@@ -55,7 +55,7 @@ A URL Base é: http://localhost:3333/
 	"email": "vntoledo05@gmail.com",
 	"password": "1234",
 	"companyname": "Wesley Toledo LTDA",
-	"cnpj": 02449992005618,
+	"cnpj": 00000000000000,
 	"cep": 12545583,
 	"address": "Rua exemplo",
 	"number": 123,
