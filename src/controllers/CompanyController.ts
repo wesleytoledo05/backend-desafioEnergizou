@@ -59,6 +59,18 @@ export class CompanyController {
         return response.status(200).json(companies).end()
     }
 
+    async findByCnpj(request: Request, response: Response) {
+        const { cnpj } = request.params;
+        const service = new GetCompanyService();
+
+        const companies = await service.executeByCnpj(cnpj);
+
+        if (companies instanceof Error) {
+            return response.status(400).json(companies.message)
+        }
+        return response.status(200).json(companies).end()
+    }
+
 
 
     async update(request: Request, response: Response) {

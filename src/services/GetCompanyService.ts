@@ -22,4 +22,14 @@ export class GetCompanyService {
 
         return company
     }
+    async executeByCnpj(cnpj: string) {
+        const repo = getRepository(Company)
+        const company = await repo.findOne({ where: { cnpj } })
+
+        if (!company) {
+            return new Error("Essa empresa não existe!")
+        }
+
+        return company
+    }
 }
