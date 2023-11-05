@@ -39,5 +39,29 @@ $ yarn dev
 
 A URL Base é: http://localhost:3333/
 
-**Se tudo estiver correto, você verá uma mensagem escrito "Server funcionando!"
+**Se tudo estiver correto, você verá uma mensagem escrito "Server funcionando!**
+
+### Cadastrar uma empresa
+
+| Endpoint | Método| Descrição |
+|----------|--------|------------|
+| /createcompany | POST  | Cadastrar uma empresa.|
+
+### Exemplo
+
+```json
+{
+	"nameClient": "José Wesley",
+	"email": "vntoledo05@gmail.com",
+	"password": "1234",
+	"companyname": "Wesley Toledo LTDA",
+	"cnpj": 02449992005638,
+	"cep": 12545583,
+	"address": "Rua exemplo",
+	"number": 123,
+	"phone": 12787578876
+}
+```
+
+
 
