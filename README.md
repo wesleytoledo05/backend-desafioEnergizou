@@ -91,4 +91,9 @@ A URL Base é: http://localhost:3333/
 | /deletecompany/id aqui | DELETE  | Deletar o cadastro de uma empresa usando ID como parâmetro. |
 
 
+## Criado com 
 
+- [NodeJS](https://nodejs.org/en/) Construção do servidor.
+- [express](https://expressjs.com/) Rotas da aplicação.
+- [MySql](https://www.mysql.com/) Base de dados.
+- [typeORM](https://typeorm.io/) Manipulação do banco de dados.
