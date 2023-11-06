@@ -86,3 +86,24 @@ A URL Base é: http://localhost:3333/
 | Endpoint | Método| Descrição |
 |----------|--------|------------|
 | /listcompanies | GET  | Listar todas empresas cadastradas. |
+
+
+### Consultar empresa por CNPJ.
+
+| Endpoint | Método| Descrição |
+|----------|--------|------------|
+| /findcompaniesbycnpj/cnpj aqui | GET  | Consultar uma empresa específica por CNPJ. |
+
+
+### Atualizar os dados de uma empresa.
+
+| Endpoint | Método| Descrição |
+|----------|--------|------------|
+| /updatecompany/id aqui | PUT  | Atualizar os dados de uma empresa usando ID como parâmetro. |
+
+
+### Deletar o cadastro de uma empresa.
+
+| Endpoint | Método| Descrição |
+|----------|--------|------------|
+| /deletecompany/id aqui | DELETE  | Deletar o cadastro de uma empresa usando ID como parâmetro. |
